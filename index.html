@@ -58,7 +58,45 @@
 
 </div>
 </div></div>
-  <form data-contact-form><label>Име<input name="name" required autocomplete="name"></label><label>Имейл<input type="email" name="email" required autocomplete="email"></label><label>Съобщение<textarea name="message" required></textarea></label><div class="notice" role="status"></div><button class="btn" type="submit">Изпрати съобщение</button><p class="small">Формата е визуална чернова и все още не изпраща имейли. До свързването на системата използвай посочения имейл адрес.</p></form>
+
+<form data-contact-form>
+  <label>Име
+    <input name="name" required autocomplete="name" maxlength="120">
+  </label>
+
+  <label>Имейл
+    <input type="email" name="email" required autocomplete="email" maxlength="254">
+  </label>
+
+  <label>Услуга
+    <select name="service" required>
+      <option value="">Изберете услуга</option>
+      <option value="Натална карта">Натална карта</option>
+      <option value="Синастрия">Синастрия</option>
+      <option value="Годишна прогноза">Годишна прогноза</option>
+      <option value="Общо запитване">Общо запитване</option>
+    </select>
+  </label>
+
+  <label>Формат
+    <select name="format" required>
+      <option value="">Изберете формат</option>
+      <option value="Предварително записан аудио/видео материал">Предварително записан аудио/видео материал</option>
+      <option value="Консултация на живо">Консултация на живо</option>
+      <option value="Не съм сигурен/сигурна">Не съм сигурен/сигурна</option>
+    </select>
+  </label>
+
+  <label>Съобщение
+    <textarea name="message" required maxlength="5000"></textarea>
+  </label>
+
+  <input type="hidden" name="language" value="Български">
+
+  <div class="notice" role="status"></div>
+
+  <button class="btn" type="submit">Изпрати заявка</button>
+</form>
 </div></section>
 </main>
 <footer><div class="container footer-inner"><div>© 2026 Velizar Rankov</div><div><a href="privacy-bg.html">Политика за поверителност</a><a href="https://play.google.com/store/apps/details?id=com.velizar.lunar" target="_blank" rel="noopener">Приложение Lunar</a></div></div></footer>
