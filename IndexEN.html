@@ -59,7 +59,45 @@
 
 </div>
 </div></div>
-  <form data-contact-form><label>Name<input name="name" required autocomplete="name"></label><label>email<input type="email" name="email" required autocomplete="email"></label><label>Message<textarea name="message" required></textarea></label><div class="notice" role="status"></div><button class="btn" type="submit">Send message</button><p class="small">Формата е визуална чернова и все още не изпраща имейли. До свързването на системата използвай посочения имейл адрес.</p></form>
+
+<form data-contact-form>
+  <label>Name
+    <input name="name" required autocomplete="name" maxlength="120">
+  </label>
+
+  <label>Email
+    <input type="email" name="email" required autocomplete="email" maxlength="254">
+  </label>
+
+  <label>Service
+    <select name="service" required>
+      <option value="">Choose a service</option>
+      <option value="Birth chart reading">Birth chart reading</option>
+      <option value="Synastry">Synastry</option>
+      <option value="Yearly forecast">Yearly forecast</option>
+      <option value="General enquiry">General enquiry</option>
+    </select>
+  </label>
+
+  <label>Format
+    <select name="format" required>
+      <option value="">Choose a format</option>
+      <option value="Pre-recorded audio/video">Pre-recorded audio/video</option>
+      <option value="Live consultation">Live consultation</option>
+      <option value="Not sure yet">Not sure yet</option>
+    </select>
+  </label>
+
+  <label>Message
+    <textarea name="message" required maxlength="5000"></textarea>
+  </label>
+
+  <input type="hidden" name="language" value="English">
+
+  <div class="notice" role="status"></div>
+
+  <button class="btn" type="submit">Send request</button>
+</form>
 </div></section>
 </main>
 <footer><div class="container footer-inner"><div>© 2026 Velizar Rankov</div><div><a href="privacy-bg.html">Privacy Policy</a><a href="https://play.google.com/store/apps/details?id=com.velizar.lunar" target="_blank" rel="noopener">Lunar app</a></div></div></footer>
